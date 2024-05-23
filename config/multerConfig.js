@@ -21,7 +21,7 @@ import multer from 'multer';
 // Set up storage and upload with multer
 const storage = multer.diskStorage({
   destination: function (req, file, callback) {
-    callback(null, './uploads');
+    callback(null, './Database');
   },
   filename: function (req, file, callback) {
     callback(null, file.originalname);
